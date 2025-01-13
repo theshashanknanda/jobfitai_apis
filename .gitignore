@@ -1,0 +1,3 @@
+# ignore enviroment files and dependencies
+./node_modules
+.env
