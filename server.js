@@ -16,7 +16,3 @@ app.use("/api/v1", userRouter)
 app.listen(process.env.PORT, () => {
     console.log(`listening at ${process.env.PORT}`)
 })
-
-app.get('/', (req,res) => {
-    return res.send('hello!')
-})
