@@ -1,2 +1,0 @@
-# jobfit.ai
-Coming soon
