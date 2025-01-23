@@ -1,12 +1,14 @@
 // init app
 let express = require('express')
 let app = express()
+const cors = require('cors');
 
 // config dotenv
 require('dotenv').config()
 
 // setup json middleware
 app.use(express.json())
+app.use(cors());
 
 // setup file upload middleware
 let fileuploadmiddleware = require('express-fileupload')
