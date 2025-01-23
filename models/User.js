@@ -21,6 +21,10 @@ const userSchema = mongoose.Schema({
         required: true,
         default: Date.now(),
     },
+    mappedDisability: {
+        type: String,
+        default: '',
+    },
 })
 
 module.exports = mongoose.model("user", userSchema)

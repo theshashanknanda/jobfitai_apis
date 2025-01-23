@@ -32,6 +32,9 @@ app.use("/api/v1", userRouter)
 let fileUploadRouter = require('./routes/fileUploadRoutes')
 app.use("/api/v1", fileUploadRouter)
 
+let jobRouter = require('./routes/JobRoutes')
+app.use('/api/v1', jobRouter)
+
 app.listen(process.env.PORT, () => {
     console.log(`listening at ${process.env.PORT}`)
 })

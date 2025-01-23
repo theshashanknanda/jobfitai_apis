@@ -51,7 +51,8 @@ fileSchema.post("save", async (doc) => {
             from: 'JobfitAI Team',
             to: doc.email,
             subject: 'New File Upload to JobfitAI',
-            html: `Hello, <br><br>Your resume has been uploaded to JobFitAI. <br>
+            html: `Hello, 
+            <br><br>Your resume has been uploaded to JobFitAI. <br>
             <a href="${doc.url}">${doc.url}</a>
             <br><br>
             Regards,<br>

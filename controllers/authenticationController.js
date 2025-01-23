@@ -31,6 +31,7 @@ exports.signup = async (req,res) => {
                 name,
                 email,
                 password: hash,
+                mappedDisability: '',
             })
 
             return res
